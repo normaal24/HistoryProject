@@ -1,4 +1,48 @@
 body {
-  background-color: #f0f0f0;
+  margin: 0;
+  height: 100%;
+  background-color: #ffffff;
   font-family: Arial, sans-serif;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #a1a1a1;
+  height: 100px;
+  align-items: center;
+}
+.menu p {
+  font-size: 250%;
+  margin: auto;
+}
+.menu a {
+  display: flex;
+  justify-content: left;
+}
+.menu img {
+  max-width: 40px;
+  max-height: 40px;
+  padding: 20px;
+}
+
+.leftcontainer {
+  width: 25%;
+  height: 100vh;
+  background-color: #bbbbbb;
+}
+.leftcontainer a {
+  padding: 5% 0 0 0;
+  display: flex;
+  justify-content: left;
+}
+.leftcontainer ul {
+  margin: 0;
+  padding-left: 10%;
+  padding-top: 20%;
 }/*# sourceMappingURL=style.css.map */
