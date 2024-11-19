@@ -2,3 +2,14 @@ body {
   background-color: #f0f0f0;
   font-family: Arial, sans-serif;
 }/*# sourceMappingURL=style.css.map */
+#header {
+  text-align: center; /*Aligning text at center*/
+  padding: 10px; /*Making some space*/
+  background-color: #A1A1A1; /*Setting background color*/
+}
+#container {
+  background-color: #BBBBBB; /*Setting background color*/
+  width: 814px; /*Setting width*/
+  height: 980px; /*Setting height*/
+  margin: 0 auto; /*Making container at center*/
+}
