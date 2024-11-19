@@ -2,6 +2,9 @@ body {
   margin: 0;
   height: 100%;
   background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   font-family: Arial, sans-serif;
 }
 
@@ -12,14 +15,15 @@ body {
   z-index: 10;
   margin: auto;
   display: flex;
-  justify-content: space-between;
   background-color: #a1a1a1;
   height: 100px;
   align-items: center;
 }
 .menu p {
   font-size: 250%;
-  margin: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .menu a {
   display: flex;
@@ -31,18 +35,20 @@ body {
   padding: 20px;
 }
 
-.leftcontainer {
-  width: 25%;
-  height: 100vh;
-  background-color: #bbbbbb;
-}
-.leftcontainer a {
-  padding: 5% 0 0 0;
+.mcontainer {
   display: flex;
-  justify-content: left;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-.leftcontainer ul {
-  margin: 0;
-  padding-left: 10%;
-  padding-top: 20%;
+
+.ccontainer {
+  background-color: #bbbbbb;
+  width: 50%;
+  height: 100vh;
+  text-align: center;
+}
+.ccontainer p {
+  padding: 15% 0 0 0;
 }/*# sourceMappingURL=style.css.map */
