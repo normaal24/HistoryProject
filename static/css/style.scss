@@ -1,4 +1,63 @@
+$ddg: #a1a1a1;
+$dg: #bbbbbb;
+$w: #ffffff;
+
+
 body {
-    background-color: #f0f0f0;
+    margin: 0;
+    height: 100%;
+    background-color: $w;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-family: Arial, sans-serif;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    margin: auto;
+    display: flex;
+    background-color: $ddg;
+    height: 100px;
+    align-items: center;
+
+    p {
+        font-size: 250%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    a {
+        display: flex;
+        justify-content: left;
+    }
+
+    img {
+        max-width: 40px;
+        max-height: 40px;
+        padding: 20px; 
+    }
+}
+
+.mcontainer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.ccontainer {
+    background-color: $dg;
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+
+    p {
+        padding: 15% 0 0 0;
+    }
 }
