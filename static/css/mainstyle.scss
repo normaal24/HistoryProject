@@ -1,0 +1,20 @@
+$ddg: #a1a1a1;
+$dg: #bbbbbb;
+$w: #ffffff;
+
+
+.info_card {
+    background-color: $dg;
+    padding: 2%;
+    max-width: 15%;
+    margin: 5% 0 0 5%;
+    border-radius: 10px;
+    border: 2px solid $ddg;
+    img {
+        border-radius: 5px;
+        border: 2px solid $ddg;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
