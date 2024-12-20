@@ -18,16 +18,19 @@ body {
   height: 100px;
   align-items: center;
 }
+
 .menu p {
   font-size: 250%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
+
 .menu a {
   display: flex;
   justify-content: left;
 }
+
 .menu img {
   max-width: 40px;
   max-height: 40px;
@@ -51,6 +54,7 @@ body {
   position: absolute;
   top: 100px;
 }
+
 .ccontainer p {
   padding: 15% 0 0 0;
 }
@@ -66,17 +70,19 @@ body {
   box-sizing: border-box;
   margin-top: 20px;
 }
+
 .personal-data img {
   border-radius: 100%;
   width: 200px;
   height: 200px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .person-info-holder {
   padding: 20px;
 }
+
 .person-info-holder p {
   font-family: Arial, sans-serif;
   width: 100%;
@@ -84,10 +90,12 @@ body {
   padding: 0;
   margin: 15px 10px;
 }
+
 .person-info-holder p:nth-of-type(1) {
   font-size: 40px;
   font-weight: bold;
 }
+
 .person-info-holder p:nth-of-type(2) {
   font-size: 24px;
   font-weight: normal;
@@ -98,10 +106,14 @@ body {
   text-align: justify;
   font-size: 20px;
 }
+
 .main-text .unpair {
   margin-right: 5%;
   margin-left: auto;
 }
+
 .main-text .pair {
   margin-left: 5%;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
