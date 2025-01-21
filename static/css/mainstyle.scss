@@ -1,20 +1,107 @@
 $ddg: #a1a1a1;
 $dg: #bbbbbb;
 $w: #ffffff;
+$green:#1f8e4d;
 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Cuprum", serif;
+}
+html{
+    background-color: #ffffff;
 
-.info_card {
-    background-color: $dg;
-    padding: 2%;
-    max-width: 15%;
-    margin: 5% 0 0 5%;
-    border-radius: 10px;
-    border: 2px solid $ddg;
-    img {
-        border-radius: 5px;
-        border: 2px solid $ddg;
-        max-width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+}
+body{
+    border-color: $green;
+    border-style: solid;
+    border-width: 5px;
+}
+.lnz{
+    width: 50px;
+    height: 50px;
+}
+.menu_lnz{
+    display: flex;
+    padding-left: 10px;
+    justify-content: flex-start;
+}
+.lnzz{
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5px;
+}
+.icon{
+    background-color: $green;
+    border-color: $green;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 10px;
+    width: 30px;
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.photo_card{
+    width: 175px;
+    height: 125px;
+    border-color: $green;
+    border-style: solid;
+    border-width: 5px;
+}
+.info_card{
+    display: flex;
+    justify-content: space-between;
+}
+.info_card div b p{
+    padding-top: 35px;
+    font-size: 125%;
+}
+.info_card div p{
+    font-size: 95%;
+}
+.info_container{
+    margin-left: 20px;
+    align-content: space-between;
+}
+#name-1{
+    margin-right: 50px;
+}
+#name-2{
+    margin-right: 60px;
+}
+#name-3{
+    margin-right: 15px;
+}
+#name-4{
+    margin-right: 60px;
+}
+#name-5{
+    margin-right: 50px;
+}
+.footer{
+    background-color: $green;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.footer p{
+    font-size: 80%;
+    text-align:center;
+    padding: 2.5px;
+    padding-top: 15px;
+    color: #fff;
+}
+hr{
+    border-color: $green;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0;
+    margin-left: 15px;
+    margin-right: 15px;
 }
