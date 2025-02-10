@@ -22,6 +22,9 @@ body {
 .person-info-holder {
   padding-right: 15px;
   padding-top: 35px;
+  margin-left: 40px;
+  text-align: right;
+  margin-bottom: auto;
 }
 
 .icon {
@@ -77,10 +80,13 @@ body {
 
 .personal-image {
   width: 50%;
-  height: 50%;
+  height: 150px;
   border-color: #1f8e4d;
   border-style: solid;
   border-width: 3px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0px;
 }
 
 .personal-data {
