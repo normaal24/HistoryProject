@@ -47,6 +47,33 @@ body {
   border-width: 0px;
 }
 
+.video {
+  position: relative;
+}
+
+.video-horizontal {
+  display: flex;
+  width: 50%;
+  height: 30%;
+  margin: 0 auto;
+}
+
+.play-button {
+  background-image: url("../img/play-button-arrowhead.png");
+  border: snow solid 4px;
+  background-size: 25px 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #1f8e4d;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
 .life {
   display: flex;
   justify-content: flex-start;
