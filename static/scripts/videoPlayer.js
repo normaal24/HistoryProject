@@ -23,5 +23,5 @@ for (let i = 0; i < videoPlayers.length; i++) {
         }
     });
 
-    videoPlayers[i].appendChild(playButton);
+    videoPlayers[i].getElementsByTagName("div")[0].appendChild(playButton);
 }
