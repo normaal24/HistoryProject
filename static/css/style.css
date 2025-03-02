@@ -51,11 +51,18 @@ body {
   position: relative;
 }
 
-.video-horizontal {
+.videoPlayer {
   display: flex;
   width: 50%;
-  height: 30%;
   margin: 0 auto;
+  border: 4px #1f8e4d solid;
+}
+
+.video-caption {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  font-size: 80%;
 }
 
 .play-button {
