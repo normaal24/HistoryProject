@@ -58,6 +58,13 @@ body{
     width: 80%;
     font-size: 80%;
 }
+.image{
+    display: flex;
+}
+.image img{
+    width: 60%;
+    margin: 0 auto;
+}
 .play-button{
     background-image: url("../img/play-button-arrowhead.png");
     border: snow solid 4px;
