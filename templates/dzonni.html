@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тащілов Микита</title>
+    <link rel="icon" type="img/png" href="../static/img/logo.png">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+    <style>
+        .interview {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            margin: 20px 15px;
+            padding: 25px 30px;
+
+            /* Card appearance */
+            background: linear-gradient(
+                135deg,
+                rgba(31, 142, 77, 0.06),
+                rgba(31, 142, 77, 0.015)
+            );
+
+            border: 1.5px solid rgba(31, 142, 77, 0.35);
+            border-left: 5px solid #1f8e4d;
+            border-radius: 14px;
+
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Quote text */
+        .quote {
+            position: relative;
+            flex: 1;
+
+            margin: 0;
+            padding: 10px 20px 10px 35px;
+
+            font-size: 19px;
+            line-height: 1.45;
+        }
+
+        .quote q {
+            display: block;
+
+            font-style: italic;
+            font-weight: 400;
+            font-size: 80%;
+
+            color: #222;
+
+            /* Don't let the text become ridiculously wide/tall */
+            max-width: 650px;
+        }
+
+        /* Remove browser's default quotation marks */
+        .quote q::before,
+        .quote q::after {
+            content: "";
+        }
+
+        /* Custom opening quotation mark */
+        .quote q::before {
+            content: "“";
+
+            position: absolute;
+            left: -2px;
+            top: -18px;
+
+            color: #1f8e4d;
+            font-family: Georgia, serif;
+            font-size: 65px;
+            font-weight: bold;
+            font-style: normal;
+            line-height: 1;
+        }
+
+        /* Custom closing quotation mark */
+        .quote q::after {
+            content: "”";
+
+            position: absolute;
+            right: -5px;
+            bottom: -35px;
+
+            color: #1f8e4d;
+            font-family: Georgia, serif;
+            font-size: 65px;
+            font-weight: bold;
+            font-style: normal;
+            line-height: 1;
+        }
+
+        .interviewed-person {
+            width: 135px;
+            height: 135px;
+
+            object-fit: cover;
+            flex-shrink: 0;
+
+            border-radius: 50%;
+
+            border: 4px solid white;
+            outline: 3px solid #1f8e4d;
+
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
+
+            /* Slightly nicer positioning */
+            margin-right: 5px;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .interview {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+                padding: 25px 20px;
+            }
+
+            .quote {
+                padding: 15px 20px;
+                font-size: 17px;
+            }
+
+            .interviewed-person {
+                width: 110px;
+                height: 110px;
+            }
+
+            .quote q::before {
+                left: -5px;
+            }
+
+            .quote q::after {
+                right: -5px;
+            }
+        }
+
+        .photoset {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+
+            margin: 20px 10px;
+            padding: 12px;
+
+            background: rgba(31, 142, 77, 0.04);
+            border: 1px solid rgba(31, 142, 77, 0.25);
+            border-radius: 10px;
+        }
+
+        .photoset img {
+            flex: 1;
+            width: 50%;
+            max-width: 300px;
+            height: 220px;
+
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #ffffff;
+
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="menu_lnz">
+            <a href="../templates/index.html"><img src="../static/img/logo.png" class="lnz"></a>
+            <p class="lnzz">
+                <b>Ліцей "Наукова Зміна"</b>
+            </p>
+        </div>
+        <a href="" style="padding-top: 2.5px;"><img src="../static/img/menu-burger.png" class="icon"></a>
+    </div>
+    <div class="mcontainer">
+        <div class="ccontainer">
+            <div class="personal-data">
+                <img src="../static/img/dzonni.png" alt="" class="personal-image">
+                <div class="person-info-holder" style="margin-left: 12px; padding-right: 0;"> <!--This custom properties was changed to make it look better-->
+                    <b><p>Тащілов Микита</p></b>
+                    <p style="margin-left: -6px;">учень 46-Т групи, позивний "Джонні Сільвергей" </p>
+                </div>
+            </div>
+            <br>
+            <div class="main-text">
+                <p class="pair">Тащілов Микита - один із найяскравіших учнів 46-Т групи. Він відомий своїм вмінням використовувати інструменти ШІ, вміннями в програмуванні. Вже в 10 класі створив сенсаційний сайт перегляду усіх можливих кінострічок від найвідоміших, так і до менш популярних. Також Микита має досвід тімліда, бо підтримав команду у не найлегші часи з та зміг створити разом з нею чудовий проєкт Морський бій, у якому він зміг реалізувати навіть мережеву гру</p>
+                <br>
+                <hr>
+                <br>
+                <p class="pair">Всі однокласники відгукуються дуже позитивно про Микиту. Нам вдалося зв'затись з його колишнім однокласником, Владиславом
+                    <div class="interview">
+                        <p class="quote">
+                            <q>
+                                Ми з Микитою ще з малєтства разом вчилися, і я вам клянусь — такова чєсного і чоткого кориша в мене зроду не було. Ми з ним вообще як вода з милом, хвіст із собакою, капець які нерозлучні були! Людина — чисто ржака, юмор шпарить тільки так, а соображалка працює — дай боже каждому. У нас в колхозі таких кадрів відродясь не водилося!
+                            </q>
+                        </p>
+
+                        <img src="../static/img/vladik.png"
+                            alt=""
+                            class="interviewed-person">
+                    </div>
+                </p>
+                <br>
+                <hr>
+                <br>
+                <p class="pair">Нещодавно "Джонні" похизувався покупкою нового обладнання для дослідницьких робіт в сфері нейромережей. Ось що пише сам Микита:
+                    <div class="interview">
+                        <p class="quote">
+                            <q>
+                                Тяжко працювавши, я зміг зібрати кошти та купити собі нову відеокарту. Я планую з її допомогою написати свій продвинутий ШІ, що зможе більш еффективно виконувати поставлені задачі з різноманітних предметів: від математики, до івриту.
+                            </q>
+                        </p>
+
+                        <img src="../static/img/rtx.png"
+                            alt=""
+                            class="interviewed-person">
+                    </div>
+                </p>
+                <br>
+                <hr>
+                <br>
+                <p class="pair">Також до п'ятиріччя фільму "Маяк", Тащілов Микита погодився організувати фотосесію з Вільямом Дефо
+                </p>
+                <div class="photoset">
+                    <img src="../static/img/shumensko.png" alt="">
+                    <img src="../static/img/defo.png" alt="">
+                </div>
+                <br>
+                <hr>
+                <br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="lifee" style="margin-left: 5%;">
+        
+    </div>
+    <br>
+    <div class="footer">
+        <p>Ліцей “Наукова зміна” 2025, Київ</p>
+    </div>
+</body>
+</html>

@@ -61,6 +61,10 @@ body {
   justify-content: space-between;
 }
 
+.info_card a:visited{
+  color: #1f8e4d;
+}
+
 .info_card div b p {
   padding-top: 35px;
   font-size: 125%;
